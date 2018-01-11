@@ -1,4 +1,5 @@
-from distutils.core import setup, Extension
+# from distutils.core import setup, Extension
+from setuptools import setup, Extension
 
 x13bcd_hash_module = Extension('x13bcd_hash',
                                sources=['x13module.c',
@@ -21,7 +22,7 @@ x13bcd_hash_module = Extension('x13bcd_hash',
                                include_dirs=['.', './sha3'])
 
 setup(name='x13bcd_hash',
-      version='1.0.6',
+      version='1.0.7',
       description='Bindings for proof of work used by x13bcd for '
                   'BitcoinDiamond',
       url='https://github.com/eveybcd/x13bcd_hash',
